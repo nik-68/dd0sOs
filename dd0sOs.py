@@ -1,7 +1,3 @@
-import random
-import socket
-import threading
-import time
 import os,sys
 import requests
 import socket
