@@ -22,6 +22,7 @@ print("""
 \033[35m██████░░░██████░░░░░███░░░░░░█████░
 """)
 time.sleep(3)
+os.system("clear")
 
 print("""\033[93m
               ANONYMOUS
