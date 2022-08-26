@@ -27,7 +27,7 @@ print("""\033[93m
       ┃╭━━┫┃┃┃╭━┫╰╯╯┃┃┃┃╭╮┃━━┫
       ┃┃  ┃╰╯┃╰━┫╭╮┳╯╰╯┃╰╯┣━━┃v2.3
       ╰╯  ╰━━┻━━┻╯╰┻━━━┻━━┻━━╯
-   ["cc","post","head","slow","check"]
+
           Разнеси всех и вся 💥
 """)
 time.sleep(2)
@@ -214,13 +214,13 @@ def InputOption(question,options,default):
 
 def CheckerOption():
 	global proxies
-	N = str(input("~ Do you need to get socks list?(y/n,default=y):"))
+	N = str(input("~ Do you need to get socks list?(y/n,default=y): => "))
 	if N == 'y' or N == "" :
 		downloadsocks(choice)
 	else:
 		pass
 	if choice == "4":
-		out_file = str(input("~ Socks4 Proxy file path(socks4.txt):"))
+		out_file = str(input("~ Socks4 Proxy file path(socks4.txt): => "))
 		if out_file == '':
 			out_file = str("socks4.txt")
 		else:
@@ -228,7 +228,7 @@ def CheckerOption():
 		check_list(out_file)
 		proxies = open(out_file).readlines()
 	elif choice == "5":
-		out_file = str(input("~ Socks5 Proxy file path(socks5.txt):"))
+		out_file = str(input("~ Socks5 Proxy file path(socks5.txt): => "))
 		if out_file == '':
 			out_file = str("socks5.txt")
 		else:
@@ -240,11 +240,11 @@ def CheckerOption():
 		sys.exit(1)
 	print ("~ Number Of Socks%s Proxies: %s" %(choice,len(proxies)))
 	time.sleep(0.03)
-	ans = str(input("~ Do u need to check the socks list?(y/n, defualt=y):"))
+	ans = str(input("~ Do u need to check the socks list?(y/n, defualt=y): => "))
 	if ans == "":
 		ans = "y"
 	if ans == "y":
-		ms = str(input("~ Delay of socks(seconds, default=5):"))
+		ms = str(input("~ Delay of socks(seconds, default=5): => "))
 		if ms == "":
 			ms = int(5)
 		else :
@@ -266,7 +266,7 @@ def OutputToScreen(ind_rlock):
 	while 1:
 		if i > 3:
 			i = 0
-		print("{:^70}".format("Proxies attacking status"))
+		print("{:^70}".format("Proxies attacking"))
 		print("{:^70}".format("IP:PORT   <->   RPS    "))
 		#1. xxx.xxx.xxx.xxx:xxxxx ==> Rps: xxxx
 		ind_rlock.acquire()
@@ -746,7 +746,7 @@ def main():
 	global brute
 	global url
 	print("~ Mode: [cc/post/head/slow/check]")
-	mode = InputOption("~ Choose Your Mode (default=cc) :",["cc","post","head","slow","check"],"cc")
+	mode = InputOption("~ Choose Your Mode (default=cc) : => ",["cc","post","head","slow","check"],"cc")
 	url = str(input("~ Input the target url: => ")).strip()
 	prevent()
 	ParseUrl(url)
@@ -789,12 +789,12 @@ def main():
 		th.setDaemon(True)
 		th.start()
 	else:
-		multiple = str(input("~ Input the Magnification(default=100):"))
+		multiple = str(input("~ Input the Magnification(default=100): => "))
 		if multiple == "":
 			multiple = int(100)
 		else:
 			multiple = int(multiple)
-		brute = str(input("~ Enable boost mode[beta](y/n, default=y):"))
+		brute = str(input("~ Enable boost mode[beta](y/n, default=y):=> "))
 		if brute == "":
 			brute = False
 		elif brute == "y":
