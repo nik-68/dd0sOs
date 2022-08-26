@@ -768,11 +768,11 @@ def main():
 		print("~ End of process")
 		return
 	if mode == "slow":	
-		thread_num = str(input("~ Connections(default=400): => "))
+		thread_num = str(input("~ Connections(default=800): => "))
 	else:
-		thread_num = str(input("~ Threads(default=400): => "))
+		thread_num = str(input("~ Threads(default=800): => "))
 	if thread_num == "":
-		thread_num = int(400)
+		thread_num = int(800)
 	else:
 		try:
 			thread_num = int(thread_num)
@@ -794,7 +794,7 @@ def main():
 			multiple = int(100)
 		else:
 			multiple = int(multiple)
-		brute = str(input("~ Enable boost mode[beta](y/n, default=y):=> "))
+		brute = str(input("~ Enable boost mode[beta](y/n, default=n): => "))
 		if brute == "":
 			brute = False
 		elif brute == "y":
