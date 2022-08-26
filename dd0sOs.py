@@ -756,7 +756,7 @@ class RequestSocksHTTP(threading.Thread): # la classe del multithreading
 					s = socks.socksocket() # creazione nuovo socket
 					s.connect((str(url2), int(urlport))) # connessione
 					s.send (str.encode(request)) # invio
-					print ("Request sent from " + str(proxy[0]+":"+proxy[1]) + " @", self.counter) # print req + counter
+					print ("\033[92mRequest sent from "\033[93m + str(proxy[0]+":"+proxy[1]) + " @",\033[0m self.counter) # print req + counter
 					try: # invia altre richieste nello stesso thread
 						for y in range(multiple): # fattore di moltiplicazione
 							s.send(str.encode(request)) # encode in bytes della richiesta HTTP
