@@ -20,6 +20,7 @@ from os import system
 from sys import stdout
 from scapy.all import *
 from random import randint
+import requests, urllib3
 os.system('cls')
 
 urllib3.disable_warnings()
