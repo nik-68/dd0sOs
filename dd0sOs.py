@@ -17,6 +17,7 @@ import sys, glob, time, requests, ssl, webbrowser
 import bz2, datetime, wget, json, cfscrape, urllib3
 from time import sleep
 from os import system
+from scapy.all import *
 from sys import stdout
 from random import randint
 import requests, urllib3
